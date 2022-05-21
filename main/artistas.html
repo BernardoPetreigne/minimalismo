@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Minimalismo</title>
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow H
+      $("#slider1").responsiveSlides({
+        maxwidth: 1200,
+        speed: 1000
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body class="bodyy">
+	<main>
+		
+
+
+		<header class="header">
+<a href="index.html"> <img class= "logo"src="img/logo.png"> </a>
+</header>
+
+			<nav class="nav">
+  <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation"/>
+  <label class="nav__trigger-finger" for="trigger">
+    <span></span>
+  </label>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="historia.html" class="nav__link">
+        <span class="nav__text">
+          Historia
+        </span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="artistas.html" class="nav__link">
+        <span class="nav__text">
+         Artistas
+        </span>
+      </a>
+        </li>
+    
+  
+    <li class="nav__item">
+      <a href="obras.html" class="nav__link">
+        <span class="nav__text">
+          Obras
+        </span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="novedades.html" class="nav__link">
+        <span class="nav__text">
+          Novedades
+        </span>
+      </a>
+    </li>
+     <li class="nav__item">
+      <a href="contacto.html" class="nav__link">
+        <span class="nav__text">
+          Registro
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+	
+<div class="cuerpo">
+
+ <div class="page-header">
+      <ul>
+        <li>
+          <a href="#portugal">Donald Judd</a>
+        </li>
+        <li>
+          <a href="#croatia">Sol LeWitt</a>
+        </li>
+        <li>
+          <a href="#malta">Carl Andre</a>
+        </li>
+        <li>
+          <a href="#norway">Frank Stella</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      ARTISTAS
+    </div>
+  </header>
+</div>
+<section class="sectionn" id="portugal">
+  <div class="container">
+    <h2>Donald Judd</h2>
+    <div class="section-text">
+      Donald Clarence Judd (3 de junio de 1928 – 12 de febrero de 1994) fue un artista estadounidense asociado al movimiento minimalista.Su obra se basa en una constante búsqueda por la autonomía y la claridad del objeto construido, resultando en una presentación artística de un espacio sin jerarquía aparente. Judd creó una gran variedad de obras descritas como "efervescentes" con la intención de desafiar el término "minimalista"; sin embargo, continúa siendo considerado el exponente líder del movimiento y el teórico más importante debido a escritos como Specific Objects 
+    </div>
+    <a href="https://es.wikipedia.org/wiki/Donald_Judd" class="section-btn" target="_blank">
+      Leer mas →
+    </a>
+  </div>
+</section>
+<section class="sectionnn" id="croatia">
+  <div class="container">
+    <h2>Sol LeWitt</h2>
+    <div class="section-text">
+      Sol LeWitt ( 9 de septiembre de 1928, Hartford, Connecticut,-8 de abril de 2007, Nueva York) fue un artista ligado a varios movimientos, como el arte conceptual y el minimalismo. La pintura, el dibujo, la fotografía y las estructuras (término que él prefería al de escultura) son sus medios artísticos predominantes. Fue objeto de centenares de exposiciones individuales en museos y galerías por todo el mundo desde 1965.
+    </div>
+    <a href="https://historia-arte.com/artistas/sol-lewitt" class="section-btn" target="_blank">
+      Leer mas →
+    </a>
+  </div>
+</section>
+<section class="sectionnnn" id="malta">
+  <div class="container">
+    <h2>Carl Andre</h2>
+    <div class="section-text">
+  	Carl André fue uno de los militantes minimalistas que reaccionaron contra la pasión desenfrenada del expresionismo abstracto mediante la supuesta frialdad de repetir y ordenar en el espacio un determinado número de módulos sencillos como ladrillos, placas, maderas…
+
+
+    </div>
+    <a href="https://historia-arte.com/artistas/carl-andre" class="section-btn" target="_blank">
+      Leer mas →
+    </a>
+  </div>
+</section>
+<section class="sectionnnnn" id="norway">
+  <div class="container">
+    <h2>Frank Stella</h2>
+    <div class="section-text">
+      Frank Stella es un artista minimalista y de la abstracción post-pictórica. Como buen minimalista, quiso eliminar cualquier sentido de ilusión en sus pinturas, pretendía la literalidad del objeto. Según sus propias palabras hablando de su arte: Lo que ves es lo que ves.
+    </div>
+    <a href="https://historia-arte.com/artistas/frank-stella" class="section-btn" target="_blank">
+      Leer mas →
+    </a>
+  </div>
+
+</section>
+
+</section>
+		
+<footer id="pie">
+  <div class="cajapie">
+  
+      <div class="mirror">
+      <h5>ARTEMINIMALISTA@GMAIL.COM</h5>
+      </div>
+      
+</div>
+</footer> 
+	
+	 <script src="/script.js"></script>
+	
+	</main>
+	
+	</body>
+</html>

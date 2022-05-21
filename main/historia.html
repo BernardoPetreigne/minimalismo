@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Minimalismo</title>
+<link rel="stylesheet" href="css/responsiveslides.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow H
+      $("#slider1").responsiveSlides({
+        maxwidth: 1200,
+        speed: 1000
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+	<main>
+		
+
+
+    <header class="header">
+<a href="index.html"> <img class= "logo"src="img/logo.png"> </a>
+</header>
+
+      <nav class="nav">
+  <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation"/>
+  <label class="nav__trigger-finger" for="trigger">
+    <span></span>
+  </label>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="historia.html" class="nav__link">
+        <span class="nav__text">
+          Historia
+        </span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="artistas.html" class="nav__link">
+        <span class="nav__text">
+         Artistas
+        </span>
+      </a>
+        </li>
+    
+  
+    <li class="nav__item">
+      <a href="obras.html" class="nav__link">
+        <span class="nav__text">
+          Obras
+        </span>
+      </a>
+    </li>
+    <li class="nav__item">
+      <a href="novedades.html" class="nav__link">
+        <span class="nav__text">
+          Novedades
+        </span>
+      </a>
+    </li>
+     <li class="nav__item">
+      <a href="contacto.html" class="nav__link">
+        <span class="nav__text">
+          Registro
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+<section id="cuerpo">
+<div class="carousel">
+  <input type="checkbox" class="faux-ui-facia"> 
+  <div class="slide" slide="5" >
+    <img src="img/g1.png" alt="Slide 5">
+  </div>
+  
+  
+  <input type="checkbox" class="faux-ui-facia"> 
+  <div class="slide" slide="4" >
+    <img src="img/g5.png" alt="Slide 4">
+  </div>
+
+  <input type="checkbox" class="faux-ui-facia"> 
+  <div class="slide" slide="3" >
+    <img src="img/g4.png"  alt="Slide 3">
+  </div>
+
+  <input type="checkbox" class="faux-ui-facia">
+  <div class="slide" slide="2">
+    <img src="img/g3.png"  alt="Slide 2">
+  </div>
+
+  <input type="checkbox" class="faux-ui-facia">
+
+  <div class="slide" slide="1" >
+    <img src="img/g2.png" alt="Slide 1">
+  </div>
+   
+  <div class="counter" count="5"> / 5</div>
+ 
+</div></div>
+
+<div class="texto" >
+  <h1> Historia </h1>
+ <p> <b>El minimalismo surgió en Nueva York a principios de la década de 1960</b> entre los artistas que renunciaban conscientemente al arte reciente que creían que se había vuelto obsoleto y académico.
+
+Una ola de nuevas influencias y estilos redescubiertos llevó a los artistas más jóvenes a <b>cuestionar los límites convencionales entre varios medios.</b> El nuevo arte favoreció lo frío sobre lo «dramático»: sus esculturas fueron frecuentemente fabricadas con materiales industriales y enfatizaron el anonimato sobre el exceso expresivo del expresionismo abstracto.
+
+Los pintores y escultores<b> evitaron el simbolismo manifiesto y el contenido emocional</b>, pero llamaron la atención sobre la materialidad de las obras.</p>
+</div>
+
+
+            <script src="Script.js" ></script>
+
+
+   
+
+
+
+
+
+
+</div>
+</section>
+
+<footer id="pie">
+  <div class="cajapie">
+  
+      <div class="mirror">
+      <h5>ARTEMINIMALISTA@GMAIL.COM</h5>
+      </div>
+      
+</div>
+</footer> 
+	
+	
+	
+	</main>
+	
+	</body>
+</html>
